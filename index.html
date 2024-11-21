@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Landing Page</title>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+      <div
+        class="container mx-auto flex items-center justify-between py-4 px-6"
+      >
+        <!-- Logo -->
+        <a href="#" class="text-xl font-bold text-green-600">
+          <img src="/public/logo.png" alt="Nexcent" />
+        </a>
+        <!-- Mobile Menu Toggle Button -->
+        <button
+          class="block xl:hidden text-green-600 focus:outline-none"
+          id="mobile-menu-button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+        <!-- Desktop Navigation -->
+        <nav class="hidden xl:flex space-x-6">
+          <a href="#" class="hover:text-green-600">Home</a>
+          <a href="#" class="hover:text-green-600">Service</a>
+          <a href="#" class="hover:text-green-600">Feature</a>
+          <a href="#" class="hover:text-green-600">Product</a>
+          <a href="#" class="hover:text-green-600">Testimonial</a>
+          <a href="#" class="hover:text-green-600">FAQ</a>
+        </nav>
+        <!-- Desktop Buttons -->
+        <div class="hidden xl:flex space-x-4">
+          <a href="#" class="hover:text-green-600">Login</a>
+          <a
+            href="#"
+            class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-500"
+            >Sign up</a
+          >
+        </div>
+      </div>
+      <!-- Mobile Navigation -->
+      <div
+        class="hidden xl:hidden flex-col bg-white shadow px-6 py-4 space-y-2"
+        id="mobile-menu"
+      >
+        <a href="#" class="hover:text-green-600 block">Home</a>
+        <a href="#" class="hover:text-green-600 block">Service</a>
+        <a href="#" class="hover:text-green-600 block">Feature</a>
+        <a href="#" class="hover:text-green-600 block">Product</a>
+        <a href="#" class="hover:text-green-600 block">Testimonial</a>
+        <a href="#" class="hover:text-green-600 block">FAQ</a>
+        <div class="space-y-2">
+          <a href="#" class="hover:text-green-600 block">Login</a>
+          <a
+            href="#"
+            class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-500 block text-center"
+            >Sign up</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="container mx-auto flex h-[90vh] flex-col-reverse md:flex-row items-center justify-center p-6 mt-6"
+    >
+      <!-- Text Content -->
+      <div
+        class="md:w-1/2 space-y-4 order-last flex flex-col items-center justify-center text-center gap-2 md:block md:text-left"
+      >
+        <h1 class="text-4xl md:text-5xl font-bold">
+          Lessons and insights <br />
+          <span class="text-green-600">from 8 years</span>
+        </h1>
+        <p class="text-gray-500">
+          Where to grow your business as a photographer: site or social media?
+        </p>
+        <button
+          class="px-6 py-3 bg-green-600 text-white rounded-md shadow hover:bg-green-500"
+        >
+          Register
+        </button>
+      </div>
+
+      <!-- Image -->
+      <div class="max-w-xs mt-4 md:auto md:max-w-xl md:order-last">
+        <img src="/public/Illustration.png" alt="Hero Illustration" />
+      </div>
+    </section>
+
+    <!-- Our Clients -->
+    <section class="container mx-auto text-center py-12">
+      <h2 class="text-4xl font-semibold text-center">Our Clients</h2>
+      <p class="text-xl text-gray-500">
+        We have been working with some Fortune 500+ clients
+      </p>
+      <div class="flex items-center justify-around p-4 gap-6 mt-6 flex-wrap">
+        <!-- Add your logos here -->
+        <div><img src="/public/logo-1.png" alt="Client Logo" /></div>
+        <div><img src="/public/logo-2.png" alt="Client Logo" /></div>
+        <div><img src="/public/logo-3.png" alt="Client Logo" /></div>
+        <div><img src="/public/logo-4.png" alt="Client Logo" /></div>
+        <div><img src="/public/logo-5.png" alt="Client Logo" /></div>
+        <div><img src="/public/logo-6.png" alt="Client Logo" /></div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="container mx-auto py-12 px-6">
+      <div class="flex flex-col gap-4 justify-center items-center">
+        <h1 class="text-4xl font-semibold max-w-xl text-center">
+          Manage your entire community in a single system
+        </h1>
+        <h4 class="text-xl">Who is Nextcent suitable for?</h4>
+      </div>
+      <!-- Feature Card -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+        <div class="bg-white p-6 shadow flex items-center flex-col rounded-lg">
+          <img src="/public/icon-1.png" alt="Feature 1" />
+          <h3 class="text-lg font-bold">Membership Organizations</h3>
+          <p class="text-gray-500">
+            Our membership management software provides full automation of
+            membership revenues and payments.
+          </p>
+        </div>
+        <div class="bg-white p-6 shadow flex items-center flex-col rounded-lg">
+          <img src="/public/icon-1.png" alt="Feature 1" />
+
+          <h3 class="text-lg font-bold">National Associations</h3>
+          <p class="text-gray-500">
+            Our membership management software provides full automation of
+            membership revenues and payments.
+          </p>
+        </div>
+        <div class="bg-white p-6 shadow flex items-center flex-col rounded-lg">
+          <img src="/public/icon-1.png" alt="Feature 1" />
+
+          <h3 class="text-lg font-bold">Clubs and Groups</h3>
+          <p class="text-gray-500">
+            Our membership management software provides full automation of
+            membership revenues and payments.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-12">
+      <div
+        class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-6"
+      >
+        <div class="max-w-xl">
+          <img src="/public/rafiki.png" alt="About Illustration" />
+        </div>
+        <div class="md:w-[50%]">
+          <h3
+            class="text-2xl text-4xl font-semibold md:max-w-3xl text-left font-bold"
+          >
+            The unseen of spending three years at Pixelgrade
+          </h3>
+          <p class="text-gray-500 mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+            amet libero ipsum. Sed accumsan quam vitae varius fringilla. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
+            libero ipsum. Sed accumsan quam vitae varius fringilla. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Sed sit amet libero
+            ipsum. Sed accumsan quam vitae varius fringilla.
+          </p>
+          <button
+            class="mt-4 px-6 py-3 bg-green-600 text-white rounded-md shadow hover:bg-green-500"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#F5F7FA] py-12">
+      <div
+        class="container mx-auto flex items-center justify-center gap-4 flex-wrap md:gap-16 px-6"
+      >
+        <!-- Statistics Section -->
+        <div class="text-center">
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800">
+            Helping a local
+            <span class="text-green-600">business reinvent itself</span>
+          </h2>
+          <p class="text-gray-500 mt-2">
+            We reached here with our hard work and dedication
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-2 text-left">
+          <!-- Statistic Card -->
+          <div class="flex items-center gap-2">
+            <img src="/public/icon(1).png" alt="Statistic" />
+            <div>
+              <h3 class="text-2xl md:text-3xl font-bold text-gray-600">
+                2,245,341
+              </h3>
+              <p class="text-gray-500">Members</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="/public/icon-1(1).png" alt="Statistic" />
+            <div>
+              <h3 class="text-2xl md:text-3xl font-bold text-gray-600">
+                46,328
+              </h3>
+              <p class="text-gray-500">Clubs</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="/public/icon-2(1).png" alt="Statistic" />
+            <div>
+              <h3 class="text-2xl md:text-3xl font-bold text-gray-600">
+                828,867
+              </h3>
+              <p class="text-gray-500">Event Bookings</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="/public/icon-3(1).png" alt="Statistic" />
+            <div>
+              <h3 class="text-2xl md:text-3xl font-bold text-gray-600">
+                1,926,436
+              </h3>
+              <p class="text-gray-500">Payments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <!-- Footer Design Section -->
+      <div
+        class="gap-6 mt-12 p-6 flex flex-col md:flex-row md:items-center md:justify-center container mx-auto"
+      >
+        <div class="max-w-md">
+          <img src="/public/pana.png" alt="Footer Design" class="w-full" />
+        </div>
+        <div class="md:w-[50%] max-w-3xl">
+          <h3 class="text-2xl text-4xl font-semibold text-left font-bold">
+            How to design your site footer like we did
+          </h3>
+          <p class="text-gray-500 mt-4">
+            Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
+            augue nec tincidunt molestie, massa nunc varius arcu, et scelerisque
+            est erat a magna. Donec quis erat at libero ultrices rutrum. Donec a
+            eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec
+            tincidunt molestie, massa nunc varius arcu, et scelerisque est erat
+            a magna. Donec quis erat at libero ultrices rutrum.
+          </p>
+          <button
+            class="mt-6 px-6 py-3 bg-green-600 text-white rounded-md shadow hover:bg-green-500"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-50 py-12">
+      <div
+        class="container mx-auto px-6 flex flex-col md:flex-row flex-wrap md:flex-nowrap items-center gap-4 p-4"
+      >
+        <div class="max-w-xl w-full">
+          <img src="/public/tesla.png" alt="Illustration" />
+        </div>
+        <!-- Testimonials Section -->
+        <div class="text-left">
+          <p class="text-gray-600">
+            Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+            lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
+            enim metus. Vivamus sed libero ornare, tristique quam in, gravida
+            enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit
+            at ligula molestie, nec molestie mi blandit. Suspendisse cursus
+            tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse
+            eget lorem eu turpis vestibulum pretium. Suspendisse potenti.
+            Quisque malesuada enim sapien, vitae placerat ante feugiat eget.
+            Quisque vulputate odio neque, eget efficitur libero condimentum id.
+            Curabitur id nibh id sem dignissim finibus ac sit amet magna.
+          </p>
+          <p class="text-gray-600 mt-4">
+            Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse
+            potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat
+            eget.
+          </p>
+          <div class="mt-6 font-bold text-green-600">Tim Smith</div>
+          <p class="text-gray-500">British Dragon Boat Racing Association</p>
+          <div class="flex items-center gap-4">
+            <div class="flex justify-center items-center mt-6 gap-4">
+              <img src="/public/logo-1.png" alt="Logo 1" class="w-12" />
+              <img src="/public/logo-2.png" alt="Logo 2" class="w-12" />
+              <img
+                src="/public/logo-3.png"
+                alt="Logo 3"
+                class="hidden md:block w-12"
+              />
+              <img
+                src="/public/logo-4.png"
+                alt="Logo 4"
+                class="hidden md:block w-12"
+              />
+              <img
+                src="/public/logo-5.png"
+                alt="Logo 4"
+                class="hidden md:block w-12"
+              />
+              <img
+                src="/public/logo-6.png"
+                alt="Logo 4"
+                class="hidden md:block w-12"
+              />
+            </div>
+            <a
+              href="#"
+              class="inline-block mt-4 text-green-600 font-medium hover:underline"
+            >
+              Meet all customers →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-50 py-12">
+      <div class="container mx-auto px-6">
+        <!-- Section Header -->
+        <div class="text-center">
+          <h2 class="text-2xl md:text-4xl font-bold text-gray-800">
+            Caring is the new marketing
+          </h2>
+          <p class="text-gray-500 mt-2 text-md max-w-2xl mx-auto">
+            The Nexcent blog is the best place to read about the latest
+            membership insights, trends, and more. See who's joining the
+            community, read about how our community is increasing their
+            membership income, and more.
+          </p>
+        </div>
+
+        <!-- Blog Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+            <img
+              src="/public/image 18.png"
+              alt="Creating Streamlined Safeguarding Processes"
+              class="rounded-t-lg w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="font-bold text-gray-800 text-lg">
+                Creating Streamlined Safeguarding Processes with OneRen
+              </h3>
+              <a
+                href="#"
+                class="text-green-600 mt-4 inline-block font-medium hover:underline"
+              >
+                Readmore →
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+            <img
+              src="/public/image 19.png"
+              alt="What are your safeguarding responsibilities"
+              class="rounded-t-lg w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="font-bold text-gray-800 text-lg">
+                What are your safeguarding responsibilities and how can you
+                manage them?
+              </h3>
+              <a
+                href="#"
+                class="text-green-600 mt-4 inline-block font-medium hover:underline"
+              >
+                Readmore →
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+            <img
+              src="/public/image 20.png"
+              alt="Revamping the Membership Model"
+              class="rounded-t-lg w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="font-bold text-gray-800 text-lg">
+                Revamping the Membership Model with Triathlon Australia
+              </h3>
+              <a
+                href="#"
+                class="text-green-600 mt-4 inline-block font-medium hover:underline"
+              >
+                Readmore →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100 py-12">
+      <div class="container mx-auto text-center">
+        <!-- Heading -->
+        <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-6">
+          Pellentesque suscipit fringilla libero eu.
+        </h2>
+        <!-- Button -->
+        <a
+          href="#"
+          class="inline-block bg-green-600 text-white font-medium py-3 px-6 rounded-lg shadow hover:bg-green-700 transition"
+        >
+          Get a Demo →
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-200 py-12">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-6 px-6"
+      >
+        <!-- Footer Logo -->
+        <div>
+          <a
+            href="#"
+            class="text-xl flex item-center gap-2 font-bold text-white"
+          >
+            <img src="/public/logo-small.png" alt="Nexcent" />
+            <p>Nexcent</p>
+          </a>
+          <p class="text-gray-400">
+            Copyright © 2020 Nexcent Ltd. All rights reserved.
+          </p>
+        </div>
+
+        <div class="flex items-center justify-between w-full">
+          <!-- Footer Links -->
+          <div>
+            <h4 class="font-bold">Company</h4>
+            <ul class="space-y-2 mt-4">
+              <li><a href="#" class="hover:text-green-600">About Us</a></li>
+              <li><a href="#" class="hover:text-green-600">Contact Us</a></li>
+              <li><a href="#" class="hover:text-green-600">Pricing</a></li>
+              <li><a href="#" class="hover:text-green-600">Testimonials</a></li>
+            </ul>
+          </div>
+
+          <!-- Footer Links -->
+          <div>
+            <h4 class="font-bold">Support</h4>
+            <ul class="space-y-2 mt-4">
+              <li><a href="#" class="hover:text-green-600">Help center</a></li>
+              <li><a href="#" class="hover:text-green-600">Legal</a></li>
+              <li><a href="#" class="hover:text-green-600">Status</a></li>
+              <li>
+                <a href="#" class="hover:text-green-600">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Subscribe Form -->
+        <div>
+          <h4 class="font-bold">Stay up to date</h4>
+          <form class="mt-4">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="w-full px-4 py-2 rounded-md bg-gray-700 text-white"
+            />
+            <button
+              type="submit"
+              class="mt-2 px-6 py-3 bg-green-600 text-white rounded-md shadow hover:bg-green-500"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./index.js"></script>
+</html>

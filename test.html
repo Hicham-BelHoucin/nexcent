@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Landing Page</title>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+      <div
+        class="container mx-auto flex items-center justify-between py-4 px-6"
+      >
+        <a href="#" class="text-xl font-bold text-green-600">Nexcent</a>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#" class="hover:text-green-600">Home</a>
+          <a href="#" class="hover:text-green-600">Service</a>
+          <a href="#" class="hover:text-green-600">Feature</a>
+          <a href="#" class="hover:text-green-600">Product</a>
+          <a href="#" class="hover:text-green-600">Testimonial</a>
+          <a href="#" class="hover:text-green-600">FAQ</a>
+        </nav>
+        <div class="space-x-4">
+          <a href="#" class="hover:text-green-600">Login</a>
+          <a
+            href="#"
+            class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-500"
+            >Sign up</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between py-12 px-6"
+    >
+      <!-- Text Content -->
+      <div class="md:w-1/2 space-y-4">
+        <h1 class="text-4xl md:text-5xl font-bold">
+          Lessons and insights <br />
+          <span class="text-green-600">from 8 years</span>
+        </h1>
+        <p class="text-gray-500">
+          Where to grow your business as a photographer: site or social media?
+        </p>
+        <button
+          class="px-6 py-3 bg-green-600 text-white rounded-md shadow hover:bg-green-500"
+        >
+          Register
+        </button>
+      </div>
+
+      <!-- Image -->
+      <div class="md:w-1/2">
+        <img src="hero-image.png" alt="Hero Illustration" />
+      </div>
+    </section>
+
+    <!-- Pagination -->
+    <div class="flex justify-center mb-12">
+      <div class="h-2 w-2 bg-green-600 rounded-full mx-1"></div>
+      <div class="h-2 w-2 bg-gray-300 rounded-full mx-1"></div>
+      <div class="h-2 w-2 bg-gray-300 rounded-full mx-1"></div>
+    </div>
+
+    <!-- Our Clients -->
+    <section class="container mx-auto text-center py-12">
+      <h2 class="text-2xl font-bold">Our Clients</h2>
+      <p class="text-gray-500">
+        We have been working with some Fortune 500+ clients
+      </p>
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-6 mt-6">
+        <!-- Add your logos here -->
+        <div><img src="logo1.png" alt="Client Logo" /></div>
+        <div><img src="logo2.png" alt="Client Logo" /></div>
+        <div><img src="logo3.png" alt="Client Logo" /></div>
+        <div><img src="logo4.png" alt="Client Logo" /></div>
+        <div><img src="logo5.png" alt="Client Logo" /></div>
+        <div><img src="logo6.png" alt="Client Logo" /></div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section
+      class="container mx-auto py-12 px-6 grid grid-cols-1 md:grid-cols-3 gap-6"
+    >
+      <!-- Feature Card -->
+      <div class="bg-white p-6 shadow rounded-lg">
+        <h3 class="text-lg font-bold">Membership Organizations</h3>
+        <p class="text-gray-500">
+          Our membership management software provides full automation of
+          membership revenues and payments.
+        </p>
+      </div>
+      <div class="bg-white p-6 shadow rounded-lg">
+        <h3 class="text-lg font-bold">National Associations</h3>
+        <p class="text-gray-500">
+          Our membership management software provides full automation of
+          membership revenues and payments.
+        </p>
+      </div>
+      <div class="bg-white p-6 shadow rounded-lg">
+        <h3 class="text-lg font-bold">Clubs and Groups</h3>
+        <p class="text-gray-500">
+          Our membership management software provides full automation of
+          membership revenues and payments.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-green-50 py-12">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center px-6"
+      >
+        <div>
+          <h3 class="text-2xl font-bold">
+            The unseen of spending three years at Pixelgrade
+          </h3>
+          <p class="text-gray-500 mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+            amet libero ipsum. Sed accumsan quam vitae varius fringilla.
+          </p>
+          <button
+            class="mt-4 px-6 py-3 bg-green-600 text-white rounded-md shadow hover:bg-green-500"
+          >
+            Learn More
+          </button>
+        </div>
+        <div>
+          <img src="about-image.png" alt="About Illustration" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-200 py-12">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Footer Logo -->
+        <div>
+          <h3 class="text-xl font-bold text-green-600">Nexcent</h3>
+          <p class="text-gray-400">
+            Copyright © 2020 Nexcent Ltd. All rights reserved.
+          </p>
+        </div>
+
+        <!-- Footer Links -->
+        <div>
+          <h4 class="font-bold">Company</h4>
+          <ul class="space-y-2 mt-4">
+            <li><a href="#" class="hover:text-green-600">About Us</a></li>
+            <li><a href="#" class="hover:text-green-600">Contact Us</a></li>
+            <li><a href="#" class="hover:text-green-600">Pricing</a></li>
+            <li><a href="#" class="hover:text-green-600">Testimonials</a></li>
+          </ul>
+        </div>
+
+        <!-- Subscribe Form -->
+        <div>
+          <h4 class="font-bold">Stay up to date</h4>
+          <form class="mt-4">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="w-full px-4 py-2 rounded-md bg-gray-700 text-white"
+            />
+            <button
+              type="submit"
+              class="mt-2 px-6 py-3 bg-green-600 text-white rounded-md shadow hover:bg-green-500"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
