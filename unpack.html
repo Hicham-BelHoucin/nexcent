@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Unpack" />
+    <title>Unpack</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Sarabun", sans-serif;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-[#2B2A28] shadow">
+      <div
+        class="container mx-auto flex items-center justify-between py-4 px-6"
+      >
+        <!-- Logo -->
+        <a
+          href="#"
+          class="text-xl font-bold text-white"
+          aria-label="Unpack Logo"
+        >
+          <span class="text-[#FF5E41]">UN</span>PACK
+        </a>
+        <!-- Mobile Menu Toggle Button -->
+        <button
+          aria-label="Toggle Menu"
+          class="block xl:hidden text-[#FF5E41] focus:outline-none"
+          id="mobile-menu-button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+        <!-- Desktop Navigation -->
+        <nav class="hidden xl:flex space-x-6 text-white">
+          <a href="#" class="hover:text-[#FF5E41]" aria-label="Home">Home</a>
+          <a href="#" class="hover:text-[#FF5E41]" aria-label="about us"
+            >About Us</a
+          >
+          <a href="#" class="hover:text-[#FF5E41]" aria-label="service"
+            >Service</a
+          >
+          <a href="#" class="hover:text-[#FF5E41]" aria-label="feature"
+            >Feature</a
+          >
+          <a href="#" class="hover:text-[#FF5E41]" aria-label="blog">Blog</a>
+        </nav>
+        <!-- Desktop Buttons -->
+        <div class="hidden xl:flex items-center space-x-4">
+          <a
+            href="#"
+            class="bg-[#FF5E41] text-white px-4 py-2 rounded-md hover:bg-green-500"
+            >Call Us</a
+          >
+        </div>
+      </div>
+      <!-- Mobile Navigation -->
+      <div
+        class="flex xl:hidden flex-col bg-[#2B2A28] text-white shadow px-6 py-4 space-y-2"
+        id="mobile-menu"
+      >
+        <a href="#" class="hover:text-[#FF5E41]" aria-label="Home">Home</a>
+        <a href="#" class="hover:text-[#FF5E41]" aria-label="about us"
+          >About Us</a
+        >
+        <a href="#" class="hover:text-[#FF5E41]" aria-label="service"
+          >Service</a
+        >
+        <a href="#" class="hover:text-[#FF5E41]" aria-label="feature"
+          >Feature</a
+        >
+        <a href="#" class="hover:text-[#FF5E41]" aria-label="blog">Blog</a>
+
+        <div class="space-y-2">
+          <a
+            href="#"
+            class="bg-[#ff5e41] text-white px-4 py-2 rounded-md hover:bg-green-500 block text-center"
+            aria-label="Call Us"
+            >Call Us</a
+          >
+        </div>
+      </div>
+      <div class="w-full h-px bg-gray-600"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="h-[100vh] grid place-items-center"
+      style="
+        background-image: url('/public/image.png');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div
+        class="container mx-auto text-white flex gap-8 p-4 flex-col md:flex-row md:justify-around items-center"
+      >
+        <div
+          class="grid bg-red-50'0 place-items-center md:place-items-start gap-8"
+        >
+          <div class="flex items-center gap-2 font-bold text-xl md:text-2xl">
+            <div class="w-10 h-px bg-white"></div>
+            <div>FAST & SECURE MOVE</div>
+          </div>
+          <h1
+            class="text-3xl lg:text-7xl max-w-xs font-bold text-center md:text-left text-white"
+          >
+            MOVING WAS NEVER <span class="text-[#ff5e41]">SO EASY</span>
+          </h1>
+          <div class="text-xl lg:text-xl hidden md:flex items-center gap-2">
+            <div>Call Us</div>
+            <a
+              aria-label="Call Us"
+              href="tel:+012222222"
+              class="bg-[#ff5e41] text-white p-4 h-12 flex item-center w-12 rounded-full"
+            >
+              <img
+                loading="lazy"
+                src="/public/right-arrow.png"
+                alt="arrow Icon"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          class="flex md:flex-col flex-wrap justify-around items-center gap-20"
+        >
+          <div
+            class="flex items-center text-xl md:text-3xl font-semibold justify-center flex-col"
+          >
+            <div class="text-[#ff5e41]">REALOCATION</div>
+            <div class="text-2xl md:text-5xl relative">
+              80
+              <div class="absolute -top-2 -right-8 font-semibold">+</div>
+            </div>
+          </div>
+          <div
+            class="flex items-center text-xl md:text-3xl font-semibold justify-center flex-col"
+          >
+            <div class="text-[#ff5e41]">CLIENT</div>
+            <div class="text-2xl md:text-5xl relative">
+              12
+
+              <div class="absolute -top-2 -right-8">K</div>
+            </div>
+          </div>
+          <div
+            class="flex items-center text-xl md:text-3xl font-semibold justify-center flex-col"
+          >
+            <div class="text-[#ff5e41]">MOVING HOUSE</div>
+            <div class="text-2xl md:text-5xl relative">
+              150
+
+              <div class="absolute -top-2 -right-8">+</div>
+            </div>
+          </div>
+        </div>
+        <div class="text-xl lg:text-xl md:hidden flex items-center gap-2">
+          <div>Call Us</div>
+          <a
+            aria-label="Call Us"
+            href="tel:+012222222"
+            class="bg-[#ff5e41] text-white p-4 h-12 flex item-center w-12 rounded-full"
+          >
+            <img
+              loading="lazy"
+              src="/public/right-arrow.png"
+              alt="arrow Icon"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="mx-auto p-6 flex flex-col md:flex-row items-center justify-center gap-12"
+      >
+        <!-- Image Section -->
+        <div class="relative">
+          <img
+            loading="lazy"
+            src="/public/delivery.png"
+            alt="Delivery Person"
+            class="rounded-lg"
+          />
+          <div
+            class="absolute bottom-4 left-4 bg-red-500 text-white px-6 py-4 rounded-lg text-center"
+          >
+            <h2 class="text-3xl font-bold">23</h2>
+            <p class="text-sm font-medium uppercase">Years of Experience</p>
+          </div>
+        </div>
+        <!-- Text Section -->
+        <div class="">
+          <div class="flex items-center gap-4">
+            <div class="w-20 h-[2px] bg-[#FF5E41]"></div>
+            <div
+              class="text-xl md:text-2xl text-[#FF5E41] uppercase font-semibold"
+            >
+              About Us
+            </div>
+          </div>
+          <h1
+            class="text-2xl md:text-6xl max-w-md font-bold text-gray-800 mt-2"
+          >
+            Transport & <span class="text-[#FF5E41]">Logistics</span>
+          </h1>
+          <p class="text-gray-500 mt-4 max-w-xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+          <p class="text-gray-600 mt-4 max-w-xl">
+            Duis aute irure dolor in reprehenderit in voluptate. Duis aute irure
+            dolor in reprehenderit in voluptate. Duis aute irure dolor in
+            reprehenderit in voluptate.
+          </p>
+          <div class="flex space-x-4 mt-6">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-600"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-600"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-600"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      style="
+        background-image: url('/public/asian-woman.png');
+        background-size: cover;
+        background-position: center;
+      "
+      class="grid gsap-8"
+    >
+      <!-- Precise & Hardworking Section -->
+      <div class="text-white py-12 px-6">
+        <div class="max-w-6xl mx-auto grid place-items-center">
+          <div class="flex items-center gap-4">
+            <div class="w-20 h-[2px] bg-[#FF5E41]"></div>
+            <div
+              class="text-xl md:text-2xl text-[#FF5E41] uppercase font-semibold"
+            >
+              Our Service
+            </div>
+          </div>
+          <h2 class="text-2xl md:text-6xl font-bold mt-2">
+            Precise & <span class="text-[#FF5E41]">Hardworking</span>
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <!-- World Moving Card -->
+            <div class="bg-gray-50 text-gray-800 p-6 rounded-lg shadow-lg">
+              <div class="flex justify-center mb-4">
+                <div class="bg-black rounded-full p-4">
+                  <img
+                    loading="lazy"
+                    src="/public/Group.png"
+                    alt="Storage Units"
+                  />
+                </div>
+              </div>
+              <h3 class="text-lg font-semibold text-center">World Moving</h3>
+              <p class="text-sm text-center mt-2 text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <button
+                class="mt-4 bg-gray-900 text-white px-6 py-2 rounded-lg w-full"
+                aria-label="Get Started"
+              >
+                Get Started
+              </button>
+            </div>
+            <!-- Storage Units Card -->
+            <div class="bg-[#FF5E41] text-white p-6 rounded-lg shadow-lg">
+              <div class="flex justify-center mb-4">
+                <div class="bg-black rounded-full p-4">
+                  <img
+                    loading="lazy"
+                    src="/public/Group-1.png"
+                    alt="Storage Units"
+                  />
+                </div>
+              </div>
+              <h3 class="text-lg font-semibold text-center">Storage Units</h3>
+              <p class="text-sm text-center mt-2 text-gray-200">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <button
+                class="mt-4 bg-white text-[#FF5E41] px-6 py-2 rounded-lg w-full"
+                aria-label="Get Started"
+              >
+                Get Started
+              </button>
+            </div>
+            <!-- Moving Kits Card -->
+            <div class="bg-gray-50 text-gray-800 p-6 rounded-lg shadow-lg">
+              <div class="flex justify-center mb-4">
+                <div class="bg-black rounded-full p-4">
+                  <img
+                    loading="lazy"
+                    src="/public/Group-2.png"
+                    alt="Storage Units"
+                  />
+                </div>
+              </div>
+              <h3 class="text-lg font-semibold text-center">Moving Kits</h3>
+              <p class="text-sm text-center mt-2 text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <button
+                class="mt-4 bg-gray-900 text-white px-6 py-2 rounded-lg w-full"
+                aria-label="Get Started"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <!-- Let the Numbers Speak Section -->
+      <div class="bg-gray-100 py-12 px-6">
+        <div
+          class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+        >
+          <!-- Text Section -->
+          <div>
+            <div class="flex items-center justify-center md:justify-end gap-4">
+              <div class="w-20 h-[2px] bg-[#FF5E41]"></div>
+              <div
+                class="text-xl md:text-2xl text-[#FF5E41] uppercase font-semibold"
+              >
+                Our Experience
+              </div>
+            </div>
+            <h2
+              class="text-2xl md:text-6xl text-center md:text-right font-bold mt-2"
+            >
+              Let the Numbers <span class="text-[#FF5E41]">Speak</span>
+            </h2>
+            <div class="mt-6 space-y-4">
+              <!-- Progress Bar -->
+              <div>
+                <div class="flex justify-between text-sm font-semibold">
+                  <span>Warehousing</span>
+                  <span>90%</span>
+                </div>
+                <div class="w-full bg-gray-300 rounded-full h-2 mt-2">
+                  <div
+                    class="bg-[#FF5E41] h-2 rounded-full"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm font-semibold">
+                  <span>Packaging</span>
+                  <span>83%</span>
+                </div>
+                <div class="w-full bg-gray-300 rounded-full h-2 mt-2">
+                  <div
+                    class="bg-[#FF5E41] h-2 rounded-full"
+                    style="width: 83%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm font-semibold">
+                  <span>Shipping</span>
+                  <span>95%</span>
+                </div>
+                <div class="w-full bg-gray-300 rounded-full h-2 mt-2">
+                  <div
+                    class="bg-[#FF5E41] h-2 rounded-full"
+                    style="width: 95%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm font-semibold">
+                  <span>Reliability</span>
+                  <span>85%</span>
+                </div>
+                <div class="w-full bg-gray-300 rounded-full h-2 mt-2">
+                  <div
+                    class="bg-[#FF5E41] h-2 rounded-full"
+                    style="width: 85%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image Section -->
+          <div class="text-center">
+            <img
+              loading="lazy"
+              src="/public/delivery-guy.png"
+              alt="Worker Image"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <!-- Why Choose Us Section -->
+      <div class="bg-gray-100 py-12 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+          <div class="flex items-center justify-center gap-4">
+            <div class="w-20 h-[2px] bg-[#FF5E41]"></div>
+            <div
+              class="text-xl md:text-2xl text-[#FF5E41] uppercase font-semibold"
+            >
+              Why Choose Us
+            </div>
+          </div>
+          <h2 class="text-2xl md:text-6xl font-bold mt-2">
+            The <span class="text-[#FF5E41]">Best</span> Movers Around
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 items-center">
+            <!-- Left Side Features -->
+            <div class="space-y-8">
+              <div class="flex items-start space-x-4">
+                <div class="bg-gray-200 p-6 rounded-md">
+                  <img
+                    loading="lazy"
+                    src="/public/Group(1).png"
+                    alt="Storage Units gsdg"
+                  />
+                </div>
+                <div class="text-left">
+                  <h4 class="text-lg font-semibold">Professional Service</h4>
+                  <p class="text-sm text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="bg-gray-200 p-6 rounded-md">
+                  <img
+                    loading="lazy"
+                    src="/public/Group-1(1).png"
+                    alt="Storage Units gsdg"
+                  />
+                </div>
+                <div class="text-left">
+                  <h4 class="text-lg font-semibold">Always on Time</h4>
+                  <p class="text-sm text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Image -->
+            <div class="flex justify-center">
+              <img
+                loading="lazy"
+                src="/public/smiling-delivery.png"
+                alt="Mover Image"
+                class="rounded-lg shadow-lg"
+              />
+            </div>
+            <!-- Right Side Features -->
+            <div class="space-y-8">
+              <div class="flex items-start space-x-4">
+                <div class="bg-[#FF5E41] p-6 rounded-md text-white">
+                  <img
+                    loading="lazy"
+                    src="/public/Group-2(1).png"
+                    alt="Storage Units gsdg"
+                  />
+                </div>
+                <div class="text-left">
+                  <h4 class="text-lg font-semibold">
+                    24 Hours Emergency Service
+                  </h4>
+                  <p class="text-sm text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="bg-gray-200 p-6 rounded-md">
+                  <img
+                    loading="lazy"
+                    src="/public/Group-3.png"
+                    alt="Storage Units gsdg"
+                  />
+                </div>
+                <div class="text-left">
+                  <h4 class="text-lg font-semibold">Flat Rate Fees</h4>
+                  <p class="text-sm text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      style="
+        background-image: url('/public/Background.png');
+        background-size: cover;
+        background-position: center;
+      "
+      class=""
+    >
+      <div
+        class="container mx-auto flex items-center justify-between text-white p-6"
+      >
+        <div class="grid place-items-center md:place-items-start gap-10 p-4">
+          <div class="text-2xl md:text-6xl font-bold max-w-2xl tracking-wide">
+            OUR FLEET IS READY TO SHIP
+            <span class="text-[#FF5E41]">WORLDWIDE</span>
+          </div>
+          <div class="text-xl lg:text-xl flex items-center gap-2">
+            <div>Call Us</div>
+            <a
+              aria-label="Call Us"
+              href="#"
+              class="bg-[#ff5e41] text-white p-4 h-12 flex item-center w-12 rounded-full"
+            >
+              <img
+                loading="lazy"
+                src="/public/right-arrow.png"
+                alt="arrow Icon"
+              />
+            </a>
+          </div>
+        </div>
+        <img
+          loading="lazy"
+          src="/public/pizza-guy.png"
+          alt="Footer Image"
+          class="w-full max-w-md hidden lg:block"
+        />
+      </div>
+    </section>
+
+    <section>
+      <!-- Testimonials Section -->
+      <div class="bg-white py-12 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+          <div class="flex items-center justify-center gap-4">
+            <div class="w-20 h-[2px] bg-[#FF5E41]"></div>
+            <div
+              class="text-xl md:text-2xl text-[#FF5E41] uppercase font-semibold"
+            >
+              Testimonials
+            </div>
+          </div>
+          <h2 class="text-2xl md:text-6xl font-bold mt-2">
+            Our <span class="text-[#FF5E41]">Happy</span> Customers
+          </h2>
+          <div class="md:p-8 mt-8">
+            <div class="flex flex-col md:flex-row items-center w-full">
+              <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                <img
+                  loading="lazy"
+                  src="/public/women-happpy.png"
+                  alt="Happy Customer"
+                  class="rounded-lg shadow-md"
+                />
+              </div>
+              <div class="w-full md:w-2/3 md:ml-8">
+                <div class="grid gap-6 md:grid-cols-2">
+                  <!-- Testimonial 1 -->
+                  <div class="bg-white p-4 rounded-lg shadow">
+                    <div class="flex items-center mb-3">
+                      <div class="text-yellow-500 text-lg">
+                        <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                      </div>
+                    </div>
+                    <p class="text-gray-600 mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div class="flex items-center">
+                      <img
+                        loading="lazy"
+                        src="https://via.placeholder.com/50"
+                        alt="David Craig"
+                        class="rounded-full w-12 h-12 mr-3"
+                      />
+                      <div>
+                        <h4 class="font-semibold text-gray-800">David Craig</h4>
+                        <p class="text-gray-500 text-sm">Chicago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Testimonial 2 -->
+                  <div class="bg-white p-4 rounded-lg shadow">
+                    <div class="flex items-center mb-3">
+                      <div class="text-yellow-500 text-lg">
+                        <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                      </div>
+                    </div>
+                    <p class="text-gray-600 mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div class="flex items-center">
+                      <img
+                        loading="lazy"
+                        src="https://via.placeholder.com/50"
+                        alt="Elizabeth Wright"
+                        class="rounded-full w-12 h-12 mr-3"
+                      />
+                      <div>
+                        <h4 class="font-semibold text-gray-800">
+                          Elizabeth Wright
+                        </h4>
+                        <p class="text-gray-500 text-sm">Seattle</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-white p-4 rounded-lg shadow">
+                    <div class="flex items-center mb-3">
+                      <div class="text-yellow-500 text-lg">
+                        <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                      </div>
+                    </div>
+                    <p class="text-gray-600 mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div class="flex items-center">
+                      <img
+                        loading="lazy"
+                        src="https://via.placeholder.com/50"
+                        alt="Elizabeth Wright"
+                        class="rounded-full w-12 h-12 mr-3"
+                      />
+                      <div>
+                        <h4 class="font-semibold text-gray-800">
+                          Elizabeth Wright
+                        </h4>
+                        <p class="text-gray-500 text-sm">Seattle</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-white p-4 rounded-lg shadow">
+                    <div class="flex items-center mb-3">
+                      <div class="text-yellow-500 text-lg">
+                        <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                      </div>
+                    </div>
+                    <p class="text-gray-600 mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div class="flex items-center">
+                      <img
+                        loading="lazy"
+                        src="https://via.placeholder.com/50"
+                        alt="Elizabeth Wright"
+                        class="rounded-full w-12 h-12 mr-3"
+                      />
+                      <div>
+                        <h4 class="font-semibold text-gray-800">
+                          Elizabeth Wright
+                        </h4>
+                        <p class="text-gray-500 text-sm">Seattle</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#222222] text-gray-300 py-10">
+      <div class="container mx-auto px-6 md:flex md:justify-between">
+        <!-- Left Section -->
+        <div class="mb-6 md:mb-0">
+          <a
+            href="#"
+            class="text-xl font-bold text-white"
+            aria-label="Unpack Logo"
+          >
+            <span class="text-[#FF5E41]">UN</span>PACK
+          </a>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li class="flex items-center">
+              <span class="mr-3 text-red-500">
+                <i class="fas fa-envelope"></i>
+              </span>
+              info@8pxlstudio
+            </li>
+            <li class="flex items-center">
+              <span class="mr-3 text-red-500">
+                <i class="fas fa-phone"></i>
+              </span>
+              +0123456789
+            </li>
+            <li class="flex items-center">
+              <span class="mr-3 text-red-500">
+                <i class="fas fa-map-marker-alt"></i>
+              </span>
+              021 Hollywood Boulevard, LA
+            </li>
+          </ul>
+        </div>
+        <!-- Middle Section -->
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-white text-lg font-semibold mb-4">Discover More</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="#" class="hover:text-red-500" aria-label="home">home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-red-500" aria-label="about us"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-red-500" aria-label="service"
+                >Service</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="hover:text-red-500" aria-label="features"
+                >Features</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="hover:text-red-500" aria-label="blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Right Section -->
+        <div>
+          <h3 class="text-white text-lg font-semibold mb-4">
+            Join Our Newsletter
+          </h3>
+          <form class="flex mb-4">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="p-2 rounded-l-md bg-gray-800 text-white focus:outline-none"
+            />
+            <button
+              class="bg-red-500 text-white px-4 rounded-r-md"
+              aria-label="Subscribe"
+            >
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+          <div class="flex space-x-4">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white"
+              aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white"
+              aria-label="Pinterest"
+              ><i class="fab fa-pinterest"></i
+            ></a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white"
+              aria-label="Dribble"
+              ><i class="fab fa-dribbble"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-gray-700" />
+      <p class="text-center text-sm text-gray-500">
+        © 2025 Unpack. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+  <script src="./index.js"></script>
+</html>
