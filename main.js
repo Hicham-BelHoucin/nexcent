@@ -44,19 +44,4 @@ document.addEventListener("DOMContentLoaded", function () {
       const formData = new FormData(e.target);
       // ... handle form submission
     });
-
-  // Add scroll-to-top button
-  const scrollButton = document.createElement("button");
-  scrollButton.innerHTML = "↑";
-  scrollButton.className =
-    "fixed bottom-8 right-8 bg-blue-500 text-white w-10 h-10 rounded-full shadow-lg hover:bg-blue-600 transition hidden";
-  document.body.appendChild(scrollButton);
-
-  window.addEventListener("scroll", () => {
-    scrollButton.classList.toggle("hidden", window.scrollY < 500);
-  });
-
-  scrollButton.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
 });

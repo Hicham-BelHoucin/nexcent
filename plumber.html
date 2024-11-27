@@ -131,50 +131,6 @@
     </style>
   </head>
   <body class="bg-blue-50">
-    <header class="shadow-sm py-4 border-b border-neutral-300">
-      <div
-        class="mx-auto flex flex-col md:flex-row items-center justify-around px-4 space-y-4 md:space-y-0"
-      >
-        <!-- Contact Info -->
-        <div
-          class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8"
-        >
-          <!-- Email -->
-          <div class="flex items-center space-x-2">
-            <div
-              class="w-10 h-10 grid place-items-center bg-blue-100 rounded-full"
-            >
-              <i class="fas fa-envelope text-blue-500"></i>
-            </div>
-            <span class="text-gray-800 text-sm md:text-base"
-              >info@pipefix.ch</span
-            >
-          </div>
-          <!-- Phone -->
-          <div class="flex items-center space-x-2">
-            <div
-              class="w-10 h-10 grid place-items-center bg-blue-100 rounded-full"
-            >
-              <i class="fas fa-phone-alt text-blue-500"></i>
-            </div>
-            <span class="text-gray-800 text-sm md:text-base"
-              >079 332 26 77</span
-            >
-          </div>
-          <!-- Address -->
-          <div class="flex items-center space-x-2">
-            <div
-              class="w-10 h-10 grid place-items-center bg-blue-100 rounded-full"
-            >
-              <i class="fas fa-map-marker-alt text-blue-500"></i>
-            </div>
-            <span class="text-gray-800 text-sm md:text-base"
-              >Bahnhofstrasse 14, 6340 Baar</span
-            >
-          </div>
-        </div>
-      </div>
-    </header>
     <!-- Navbar -->
     <nav class="bg-white shadow-md relative z-40">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -231,20 +187,21 @@
 
     <!-- Hero Section -->
     <section
-      class="relative grid place-item-center bg-blue-50 min-h-screen py-12 px-4 lg:px-20"
+      class="relative py-12 min-h-screen grid place-items-center bg-gradient-to-br from-white via-blue-50 to-sky-100 px-4 lg:px-20"
     >
+      <div class="absolute inset-0 bg-grid-slate-100 opacity-[0.04] -z-1"></div>
       <div
-        class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12"
+        class="max-w-[90rem] w-full mx-auto flex flex-col lg:flex-row items-center gap-16"
       >
         <!-- Text Content -->
-        <div class="lg:w-1/2 text-center lg:text-left space-y-6">
+        <div class="lg:w-1/2 text-center lg:text-left space-y-10">
           <h1
-            class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight"
+            class="text-4xl sm:text-5xl lg:text-5xl font-bold text-gray-800 leading-tight"
           >
             Sanitärnotfall? <br />
             Wir sind für Sie da!
           </h1>
-          <p class="text-base sm:text-lg text-gray-600">
+          <p class="text-lg sm:text-xl lg:text-2xl text-gray-600">
             Schnelle, kostengünstige und zuverlässige Sanitärdienstleistungen
             für Ihr Zuhause oder Unternehmen. Unser Expertenteam steht Ihnen
             rund um die Uhr zur Verfügung, um verstopfte Rohre, Lecks oder
@@ -252,32 +209,34 @@
           </p>
           <a
             href="tel:079332267"
-            class="inline-block bg-[#1a56db] text-white text-base sm:text-lg font-medium py-3 px-6 rounded-lg shadow-lg hover:bg-[#1e429f]"
+            class="inline-block bg-[#1a56db] text-white text-xl sm:text-2xl font-medium py-4 px-8 rounded-lg shadow-lg hover:bg-[#1e429f]"
           >
-            <i class="fas fa-phone text-white mr-2"></i>
+            <i class="fas fa-phone text-white mr-3"></i>
             079 332 26 77
           </a>
           <div
-            class="flex flex-wrap justify-center lg:justify-start gap-4 pt-6"
+            class="flex flex-wrap justify-center lg:justify-start gap-6 pt-8"
           >
-            <div class="flex items-center space-x-2">
-              <span class="text-blue-600 text-xl">✔</span>
-              <span class="text-gray-700">Schnelle Reaktion</span>
+            <div class="flex items-center space-x-3">
+              <span class="text-blue-600 text-2xl">✔</span>
+              <span class="text-gray-700 text-xl">Schnelle Reaktion</span>
             </div>
-            <div class="flex items-center space-x-2">
-              <span class="text-blue-600 text-xl">✔</span>
-              <span class="text-gray-700">Faire Preise</span>
+            <div class="flex items-center space-x-3">
+              <span class="text-blue-600 text-2xl">✔</span>
+              <span class="text-gray-700 text-xl">Faire Preise</span>
             </div>
-            <div class="flex items-center space-x-2">
-              <span class="text-blue-600 text-xl">✔</span>
-              <span class="text-gray-700">Vertrauenswürdige Profis</span>
+            <div class="flex items-center space-x-3">
+              <span class="text-blue-600 text-2xl">✔</span>
+              <span class="text-gray-700 text-xl"
+                >Vertrauenswürdige Profis</span
+              >
             </div>
           </div>
         </div>
 
         <!-- Image Section -->
         <div class="lg:w-1/2 flex justify-center relative">
-          <div class="relative group w-full max-w-md">
+          <div class="relative group w-full max-w-2xl">
             <img
               src="/public/plombier-1.jpg"
               alt="Plumber fixing sink"
@@ -337,7 +296,10 @@
     </section>
 
     <!-- Contact Info Bar -->
-    <div id="contact" class="bg-blue-500 rounded-2xl mx-4 my-8 p-6 sm:p-8">
+    <div
+      id="contact"
+      class="bg-blue-500 container mx-auto rounded-2xl mx-4 my-8 p-6 sm:p-8"
+    >
       <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
         <!-- Office -->
         <div class="flex items-center gap-4 w-full sm:w-auto">
@@ -615,7 +577,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 bg-blue-600 relative overflow-hidden">
+    <section class="bg-blue-600 relative overflow-hidden">
       <!-- Decorative elements -->
       <div class="absolute inset-0 opacity-10">
         <div
@@ -626,7 +588,7 @@
         ></div>
       </div>
 
-      <div class="max-w-7xl mx-auto px-4 relative z-10">
+      <div class="max-w-7xl mx-auto px-4 relative z-10 h-full">
         <div
           class="flex flex-col md:flex-row items-center justify-between gap-12"
         >
@@ -635,34 +597,52 @@
               Haben Sie ein Problem? <br />
               <span class="text-blue-200">Wir lösen es heute!</span>
             </h2>
-            <div class="flex flex-wrap gap-6 mt-8">
-              <a
-                href="tel:079332267"
-                class="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+            <form
+              class="flex flex-col gap-4 mt-8 bg-white text-black p-6 rounded-lg shadow-lg"
+            >
+              <input
+                type="text"
+                placeholder="Ihr Name"
+                class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Ihre E-Mail"
+                class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+              <textarea
+                placeholder="Ihre Nachricht"
+                class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                rows="4"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                class="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
               >
-                <svg
-                  class="w-6 h-6 mr-3"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-                  ></path>
-                </svg>
-                079 332 26 77
-              </a>
-            </div>
+                Senden
+              </button>
+            </form>
           </div>
-          <div class="md:w-1/2">
+          <div class="md:w-1/2 flex items-end h-full">
             <img
-              src="/public/worker-smile.png"
+              src="/public/smiling-professional.webp"
               alt="Professional Plumber"
-              class="max-w-md mx-auto drop-shadow-2xl"
+              class="drop-shadow-2xl"
             />
           </div>
         </div>
       </div>
     </section>
+
+    <a
+      href="tel:079332267"
+      class="fixed bottom-8 right-8 bg-blue-500 grid place-items-center text-white w-14 h-14 rounded-full shadow-lg hover:bg-blue-600 transition"
+    >
+      <i class="fas fa-phone text-white"></i>
+    </a>
 
     <section class="bg-blue-50 py-12">
       <div class="max-w-7xl mx-auto px-4 text-center">
@@ -672,47 +652,63 @@
         <h3 class="mt-2 text-3xl font-extrabold text-gray-900">
           Echte Kundenbewertungen:
         </h3>
-        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Review 1 -->
-          <div class="bg-white shadow-lg rounded-lg p-6">
-            <div class="flex items-center justify-between">
-              <h4 class="text-lg font-medium text-gray-800">Moris John Son,</h4>
-              <div class="flex text-yellow-500">
-                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span
-                ><span>⭐</span>
-              </div>
+          <div class="bg-white rounded-xl p-8 text-center shadow-lg">
+            <div class="flex justify-center mb-6">
+              <img
+                src="https://i.pravatar.cc/500?img=13"
+                alt="Customer portrait"
+                class="w-24 h-24 rounded-full object-cover"
+              />
             </div>
-            <p class="mt-4 text-gray-600">
-              Der verstopfte Abfluss im Bad wurde schnell beseitigt. Der
-              Klempner kam schnell und war sehr kundenorientiert.
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Eduard Köller</h3>
+            <div class="flex justify-center text-yellow-400 mb-4">★★★★★</div>
+            <p class="text-gray-600 italic">
+              "Rohrflix übernimmt für meine Vermietungsobjekte regelmäßig die
+              Reinigung der Abwassersysteme. Als Eigentümer habe ich nicht viel
+              Zeit, mich damit zu befassen. Ich bin daher froh, dass die netten
+              Mitarbeiter alles schnell & selbstständig durchführen."
             </p>
           </div>
+
           <!-- Review 2 -->
-          <div class="bg-white shadow-lg rounded-lg p-6">
-            <div class="flex items-center justify-between">
-              <h4 class="text-lg font-medium text-gray-800">David Peter,</h4>
-              <div class="flex text-yellow-500">
-                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span
-                ><span>⭐</span>
-              </div>
+          <div class="bg-white rounded-xl p-8 text-center shadow-lg">
+            <div class="flex justify-center mb-6">
+              <img
+                src="https://i.pravatar.cc/500?img=10"
+                alt="Customer portrait"
+                class="w-24 h-24 rounded-full object-cover"
+              />
             </div>
-            <p class="mt-4 text-gray-600">
-              Ich würde diese Sanitärfirma wieder kontaktieren. Die Preise sind
-              wirklich gut, und der Service wird schnell ausgeführt.
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Clara Wagner</h3>
+            <div class="flex justify-center text-yellow-400 mb-4">★★★★★</div>
+            <p class="text-gray-600 italic">
+              "Zwischen den Feiertagen ist das Wasser in der Dusche gar nicht
+              mehr abgelaufen. Der freundliche Mitarbeiter von Rohrflix war nach
+              nicht mal 2 Stunden da und hat den Abfluss super schnell
+              gereinigt. Die Preise sind auch absolut in Ordnung. Danke für die
+              schnelle Hilfe!"
             </p>
           </div>
+
           <!-- Review 3 -->
-          <div class="bg-white shadow-lg rounded-lg p-6">
-            <div class="flex items-center justify-between">
-              <h4 class="text-lg font-medium text-gray-800">Jerzzy Lamot,</h4>
-              <div class="flex text-yellow-500">
-                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span
-                ><span>⭐</span>
-              </div>
+          <div class="bg-white rounded-xl p-8 text-center shadow-lg">
+            <div class="flex justify-center mb-6">
+              <img
+                src="https://i.pravatar.cc/500?img=11"
+                alt="Customer portrait"
+                class="w-24 h-24 rounded-full object-cover"
+              />
             </div>
-            <p class="mt-4 text-gray-600">
-              Wenn Sie einen Fachmann suchen, sollten Sie sich hier melden. Ich
-              kann diesen Klempner nur empfehlen.
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Sabine Müller</h3>
+            <div class="flex justify-center text-yellow-400 mb-4">★★★★★</div>
+            <p class="text-gray-600 italic">
+              "Nachdem wir vorigen Sommer im Keller einen Wasserschaden hatten,
+              hat sich das Team von Rohrflix um die gesamte Erneuerung der
+              Rohrleitungen gekümmert und ebenfalls die Bauwerkstrocknung
+              übernommen. Dank Rohrflix ist nun alles wieder in Ordnung. Besten
+              Dank."
             </p>
           </div>
         </div>
