@@ -1,20 +1,41 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const menuBtn = document.getElementById("menu-btn");
+  const menuBtns = document.querySelectorAll("#menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
   let isMenuOpen = false;
 
-  // Toggle menu
-  menuBtn.addEventListener("click", function (e) {
+  // Toggle menu function
+  function toggleMenu(e) {
     e.stopPropagation();
     isMenuOpen = !isMenuOpen;
     mobileMenu.classList.toggle("active");
+
+    // Update icon based on menu state
+    menuBtns.forEach((btn) => {
+      const icon = btn.querySelector("i");
+      if (icon) {
+        icon.className = isMenuOpen ? "fa-solid fa-x" : "fa-solid fa-bars";
+      }
+    });
+  }
+
+  // Add click handler to all menu buttons
+  menuBtns.forEach((btn) => {
+    btn.addEventListener("click", toggleMenu);
   });
 
   // Close menu when clicking anywhere else
   document.addEventListener("click", function (e) {
     if (isMenuOpen && !mobileMenu.contains(e.target)) {
-      mobileMenu.classList.remove("active");
       isMenuOpen = false;
+      mobileMenu.classList.remove("active");
+
+      // Reset icons
+      menuBtns.forEach((btn) => {
+        const icon = btn.querySelector("i");
+        if (icon) {
+          icon.className = "fa-solid fa-bars";
+        }
+      });
     }
   });
 
